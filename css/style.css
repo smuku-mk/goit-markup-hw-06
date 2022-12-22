@@ -455,7 +455,7 @@ ul {
 .join-us-container {
   margin-top: 12px;
 }
-.join-us-title {
+.footer-titles {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -576,4 +576,9 @@ ul {
   background-color: var(--white-color);
   padding: 0;
   font-size: 0;
+}
+
+/* hw6 */
+.newsletter-container {
+  margin-top: 12px;
 }
