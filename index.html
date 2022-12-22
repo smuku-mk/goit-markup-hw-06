@@ -585,9 +585,24 @@
           </div>
         </div>
         <!-- FOOTER NEWSLETTER -->
-        <div class="newsletter-container">
-          <h3 class="footer-titles">zapisz się do newslettera</h3>
-        </div>
+        <form>
+          <div
+            class="newsletter-container"
+            role="group"
+            aria-labelledby="newsletter"
+          >
+            <label>
+              <h3 class="footer-titles">zapisz się do newslettera</h3>
+              <input type="email" name="email" placeholder="E-mail" />
+            </label>
+          </div>
+          <button type="submit" class="all-buttons button-newsletter">
+            Zapisz się
+            <svg width="24" height="24">
+              <use href="images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
