@@ -605,6 +605,13 @@ input::placeholder {
   height: 50px;
   margin-left: 12px;
 }
+.button-newsletter:hover,
+.button-newsletter:hover .newsletter-button-text,
+.button-newsletter:hover .newsletter-icon {
+  background-color: var(--white-color);
+  color: var(--brand-color);
+  fill: var(--brand-color);
+}
 .newsletter-button-text {
   font-weight: 700;
   font-size: 16px;
