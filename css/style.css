@@ -349,7 +349,7 @@ ul {
 }
 .footer-content {
   display: flex;
-  gap: 70px;
+  justify-content: space-between;
   padding: 60px 15px;
 }
 .footer-address {
@@ -437,6 +437,7 @@ ul {
   gap: 30px;
 }
 .our-customers-links {
+  width: 170px;
   font-size: 0;
   border: 1px solid var(--icons-fill);
   border-radius: 4px;
@@ -603,10 +604,20 @@ input::placeholder {
   width: 200px;
   height: 50px;
   margin-left: 12px;
+}
+.newsletter-button-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  text-align: center;
+}
+.newslatter-button-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.newsletter-icon {
+  fill: var(--white-color);
 }
