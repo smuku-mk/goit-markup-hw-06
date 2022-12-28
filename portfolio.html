@@ -308,6 +308,7 @@
     <!-- FOOTER -->
     <footer class="footer-bg">
       <div class="container footer-content">
+        <!-- FOOTER CONTACTS -->
         <div>
           <a class="logo-footer" href="index.html">
             <span class="logo-web">Web</span>Studio
@@ -335,8 +336,9 @@
             </ul>
           </address>
         </div>
+        <!-- FOOTER JOIN US -->
         <div class="join-us-container">
-          <h3 class="join-us-title">dołącz do nas</h3>
+          <h3 class="footer-titles">dołącz do nas</h3>
           <div class="join-us-links-container">
             <a class="join-us-links" href="#">
               <svg class="join-us-svg" width="44" height="44">
@@ -384,6 +386,27 @@
             </a>
           </div>
         </div>
+        <!-- FOOTER NEWSLETTER -->
+        <form name="newsletter" autocomplete="on" validate>
+          <div
+            class="newsletter-container"
+            role="group"
+            aria-labelledby="newsletter"
+          >
+            <label>
+              <h3 class="footer-titles">zapisz się do newslettera</h3>
+              <input type="email" name="newsletter-email" placeholder="E-mail" />
+            </label>
+          </div>
+          <button type="submit" class="all-buttons button-newsletter">
+            <div class="newslatter-button-content">
+              <span class="newsletter-button-text">Zapisz się</span>
+              <svg class="newsletter-icon" width="24" height="24">
+                <use href="images/icons.svg#icon-send"></use>
+              </svg>
+            </div>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
