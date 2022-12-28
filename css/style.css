@@ -579,7 +579,7 @@ ul {
   font-size: 0;
 }
 
-/* hw6 */
+/* newsletter */
 .newsletter-container {
   margin-top: 12px;
   display: inline-block;
@@ -628,3 +628,5 @@ input::placeholder {
 .newsletter-icon {
   fill: var(--white-color);
 }
+
+/* modal form */
