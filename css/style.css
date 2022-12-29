@@ -20,30 +20,22 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--body-color);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+}
+a {
+  text-decoration: none;
 }
 
 /* logo */
 .logo-header {
   font-family: "Raleway", sans-serif;
-  text-decoration: none;
   color: var(--black-color);
   font-size: 26px;
   line-height: 1.19;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
-  text-decoration: none;
   color: var(--white-color);
   font-size: 26px;
   line-height: 1.19;
@@ -54,7 +46,6 @@ ul {
 
 /* nav */
 .nav-links {
-  text-decoration: none;
   color: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -105,7 +96,6 @@ ul {
 /* contacts */
 .contacts-header {
   display: flex;
-  text-decoration: none;
   color: var(--text-color);
   fill: var(--text-color);
   font-weight: 500;
@@ -121,7 +111,6 @@ ul {
   fill: var(--brand-color);
 }
 .contacts-footer {
-  text-decoration: none;
   color: var(--contacts-footer-color);
   font-weight: 400;
   font-size: 14px;
@@ -562,6 +551,7 @@ ul {
   transition-property: transform, border-radius;
   transition-duration: 0.4s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
 }
 .is-hidden .modal {
   transform: scale(0.1);
@@ -584,7 +574,7 @@ ul {
   margin-top: 12px;
   display: inline-block;
 }
-input {
+input[name="newsletter-email"] {
   background-color: var(--header-footer-bg);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -593,7 +583,7 @@ input {
   padding: 15px 16px;
   width: 358px;
 }
-input::placeholder {
+input[name="newsletter-email"]::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -630,3 +620,59 @@ input::placeholder {
 }
 
 /* modal form */
+.modal-title {
+  font-size: 20px;
+  line-height: 1, 15;
+  letter-spacing: 0.03em;
+  color: inherit;
+  margin-bottom: 12px;
+}
+.order-form {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* text-align: left; */
+}
+.order-input-title {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  margin-bottom: 4px;
+  text-align: left;
+}
+.button-order {
+  width: 200px;
+  height: 50px;
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  display: block;
+}
+.order-links {
+  text-decoration: underline;
+  color: var(--brand-color);
+}
+.order-checkbox-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.order-label {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.order-comment {
+  resize: none;
+}
+.order-input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: inherit;
+  padding: 11px 12px 11px 42px;
+}

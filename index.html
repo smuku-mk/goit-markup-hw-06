@@ -73,6 +73,53 @@
                   ></use>
                 </svg>
               </button>
+              <h2 class="modal-title">
+                Zostaw swoje dane w formularzu poniżej
+              </h2>
+              <form name="order" autocomplete="on" validate>
+                <div class="order-form" role="group" aria-labelledby="order">
+                  <label class="order-label">
+                    <p class="order-input-title">Imię</p>
+                    <input
+                      class="order-input"
+                      type="text"
+                      name="order-first-name"
+                    />
+                  </label>
+                  <label class="order-label">
+                    <p class="order-input-title">Telefon</p>
+                    <input class="order-input" type="tel" name="order-tel" />
+                  </label>
+                  <label class="order-label">
+                    <p class="order-input-title">Email</p>
+                    <input
+                      class="order-input"
+                      type="email"
+                      name="order-email"
+                    />
+                  </label>
+                  <label class="order-label">
+                    <p class="order-input-title">Komentarz</p>
+                    <textarea
+                      class="order-comment"
+                      name="order-comment"
+                      rows="5"
+                      placeholder="Wprowadź tekst"
+                    ></textarea>
+                  </label>
+                  <label class="order-label">
+                    <input type="checkbox" />
+                    <span class="order-checkbox-text">
+                      Oświadczam iż akceptuję
+                      <a class="order-links" href="#">Regulamin</a> i
+                      <a class="order-links" href="#">Politykę Prywatności</a>.
+                    </span>
+                  </label>
+                  <button class="all-buttons button-order" type="submit">
+                    Wyślij
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -597,6 +644,7 @@
                 type="email"
                 name="newsletter-email"
                 placeholder="E-mail"
+                required
               />
             </label>
           </div>
