@@ -453,6 +453,7 @@ a {
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
+  display: block;
 }
 .join-us-links-container {
   display: flex;
@@ -594,20 +595,20 @@ input[name="newsletter-email"]::placeholder {
   width: 200px;
   height: 50px;
   margin-left: 12px;
-}
-.button-newsletter:hover,
-.button-newsletter:hover .newsletter-button-text,
-.button-newsletter:hover .newsletter-icon {
-  background-color: var(--white-color);
-  color: var(--brand-color);
-  fill: var(--brand-color);
-}
-.newsletter-button-text {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--white-color);
+  fill: var(--white-color);
+}
+.button-newsletter:hover {
+  background-color: var(--white-color);
+  color: var(--brand-color);
+}
+.button-newsletter:hover .newsletter-icon {
+  fill: var(--brand-color);
 }
 .newslatter-button-content {
   display: flex;
@@ -627,17 +628,13 @@ input[name="newsletter-email"]::placeholder {
   color: inherit;
   margin-bottom: 12px;
 }
-.order-form {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* text-align: left; */
-}
 .order-input-title {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--text-color);
   margin-bottom: 4px;
+  display: block;
   text-align: left;
 }
 .button-order {
@@ -649,7 +646,7 @@ input[name="newsletter-email"]::placeholder {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  display: block;
+  margin-top: 20px;
 }
 .order-links {
   text-decoration: underline;
@@ -665,9 +662,23 @@ input[name="newsletter-email"]::placeholder {
   display: block;
   margin-bottom: 10px;
   width: 100%;
+  position: relative;
 }
-.order-comment {
+.order-textarea {
   resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.order-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 .order-input {
   width: 100%;
@@ -675,4 +686,33 @@ input[name="newsletter-email"]::placeholder {
   border-radius: 4px;
   color: inherit;
   padding: 11px 12px 11px 42px;
+}
+.order-label:focus-within .order-input {
+  border: 1px solid var(--brand-color);
+  outline: none;
+}
+.order-label:focus-within .order-form-icon {
+  fill: var(--brand-color);
+}
+.order-textarea:focus {
+  border: 1px solid var(--brand-color);
+  outline: none;
+}
+.order-form-icon {
+  position: absolute;
+  left: 15px;
+  top: 30px;
+}
+.order-checkbox-icon {
+  position: absolute;
+  fill: var(--white-color);
+  border: 1px solid #212121;
+  border-radius: 3px;
+  left: 16px;
+  top: 3px;
+}
+.order-checkbox-input:checked + .order-checkbox-icon {
+  fill: var(--brand-color);
+  border: none;
+  border-radius: 0;
 }
