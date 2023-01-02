@@ -595,19 +595,22 @@ input[name="newsletter-email"]::placeholder {
   width: 200px;
   height: 50px;
   margin-left: 12px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  fill: var(--white-color);
 }
-.button-newsletter:hover {
+.button-newsletter:hover,
+.button-newsletter:focus {
   background-color: var(--white-color);
   color: var(--brand-color);
 }
-.button-newsletter:hover .newsletter-icon {
+.button-newsletter:hover .newsletter-icon,
+.button-newsletter:focus .newsletter-icon {
   fill: var(--brand-color);
 }
 .newslatter-button-content {
@@ -618,6 +621,9 @@ input[name="newsletter-email"]::placeholder {
 }
 .newsletter-icon {
   fill: var(--white-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* modal form */
@@ -647,6 +653,15 @@ input[name="newsletter-email"]::placeholder {
   line-height: 1.88;
   letter-spacing: 0.06em;
   margin-top: 20px;
+  border: 2px solid var(--brand-color);
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-order:hover,
+.button-order:focus {
+  background-color: var(--white-color);
+  color: var(--brand-color);
 }
 .order-links {
   text-decoration: underline;
@@ -673,6 +688,10 @@ input[name="newsletter-email"]::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  outline: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-textarea::placeholder {
   font-size: 12px;
@@ -686,22 +705,27 @@ input[name="newsletter-email"]::placeholder {
   border-radius: 4px;
   color: inherit;
   padding: 11px 12px 11px 42px;
+  outline: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-label:focus-within .order-input {
   border: 1px solid var(--brand-color);
-  outline: none;
 }
 .order-label:focus-within .order-form-icon {
   fill: var(--brand-color);
 }
 .order-textarea:focus {
   border: 1px solid var(--brand-color);
-  outline: none;
 }
 .order-form-icon {
   position: absolute;
   left: 15px;
   top: 30px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-checkbox-icon {
   position: absolute;
@@ -714,5 +738,4 @@ input[name="newsletter-email"]::placeholder {
 .order-checkbox-input:checked + .order-checkbox-icon {
   fill: var(--brand-color);
   border: none;
-  border-radius: 0;
 }
