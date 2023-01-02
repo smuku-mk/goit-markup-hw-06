@@ -542,7 +542,6 @@ a {
 .modal {
   position: relative;
   width: 528px;
-  height: 581px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -730,10 +729,16 @@ input[name="newsletter-email"]::placeholder {
 .order-checkbox-icon {
   position: absolute;
   fill: var(--white-color);
-  border: 1px solid #212121;
+  border: 2px solid #212121;
   border-radius: 3px;
-  left: 16px;
+  left: 12px;
   top: 3px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.order-checkbox-input {
+  margin-right: 5px;
 }
 .order-checkbox-input:checked + .order-checkbox-icon {
   fill: var(--brand-color);
